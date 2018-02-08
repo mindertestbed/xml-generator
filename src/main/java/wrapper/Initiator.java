@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 public class Initiator {
   public static void main(String[] args) throws InterruptedException, IOException {
     System.out.println("jenerator");
-    MinderClientApp.main(args);
+    MinderClientApp.init();
 
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

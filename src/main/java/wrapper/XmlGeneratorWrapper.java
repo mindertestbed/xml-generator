@@ -6,7 +6,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import minderengine.*;
 import xmlservices.XMLGenerationService;
 
-public abstract class XmlGeneratorWrapper extends Wrapper {
+public abstract class XmlGeneratorWrapper extends Adapter {
 
   private boolean isRunning = false;
   private ArrayList<XMLWorker> xmlWorkerList;

@@ -31,7 +31,7 @@ public class XMLWorker implements Runnable {
       byte[] generatedXML = xmlService.generateXML(requestMessage);
 
       try {
-        Thread.sleep(5000);
+        Thread.sleep(500);
       } catch (InterruptedException e) {
         // TODO Auto-generated catch block
         e.printStackTrace();
