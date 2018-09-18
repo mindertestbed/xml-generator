@@ -1,4 +1,4 @@
-package serialization;
+package com.isirius.minder.samples.xmlGenerator.serialization;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

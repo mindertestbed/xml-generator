@@ -1,4 +1,4 @@
-package xmlservices;
+package com.isirius.minder.samples.xmlGenerator.xmlservices;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -8,8 +8,8 @@ import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import serialization.SerializationUtils;
-import xmlmodel.books.*;
+import com.isirius.minder.samples.xmlGenerator.serialization.SerializationUtils;
+import com.isirius.minder.samples.xmlGenerator.books.*;
 public class XMLGenerationService{
 
 	public byte[] generateXML(byte[] input){
@@ -41,7 +41,7 @@ public class XMLGenerationService{
 		
 		ByteArrayOutputStream byteArrayOutputStream=new ByteArrayOutputStream();;
 		try {
-			JAXBContext jaxbContext = JAXBContext.newInstance("xmlmodel.books");
+			JAXBContext jaxbContext = JAXBContext.newInstance("com.isirius.minder.samples.xmlGenerator.books");
 			JAXBElement<BooksForm> jaxbElement = objectFactory.createBooks(booksForm);
 			
 			Marshaller marshaller = jaxbContext.createMarshaller();

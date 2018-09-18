@@ -1,4 +1,4 @@
-package wrapper;
+package com.isirius.minder.samples.xmlGenerator;
 
 import gov.tubitak.minder.client.MinderClientApp;
 

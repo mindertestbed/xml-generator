@@ -1,14 +1,14 @@
-package wrapper;
+package com.isirius.minder.samples.xmlGenerator;
 
-import xmlservices.XMLGenerationService;
+import com.isirius.minder.samples.xmlGenerator.xmlservices.XMLGenerationService;
 
 public class XMLWorker implements Runnable {
   private boolean isTerminated;
-  private XmlGeneratorWrapper xmlGeneratorWrapper;
+  private XmlGeneratorAdapter xmlGeneratorAdapter;
 
 
-  public XMLWorker(XmlGeneratorWrapper xmlGeneratorWrapper) {
-    this.xmlGeneratorWrapper = xmlGeneratorWrapper;
+  public XMLWorker(XmlGeneratorAdapter xmlGeneratorAdapter) {
+    this.xmlGeneratorAdapter = xmlGeneratorAdapter;
     this.isTerminated = false;
   }
 
@@ -21,7 +21,7 @@ public class XMLWorker implements Runnable {
     while (!isTerminated) {
       byte[] requestMessage = null;
       try {
-        requestMessage = xmlGeneratorWrapper.take();
+        requestMessage = xmlGeneratorAdapter.take();
       } catch (InterruptedException e1) {
         // TODO Auto-generated catch block
         e1.printStackTrace();
@@ -39,7 +39,7 @@ public class XMLWorker implements Runnable {
 
       System.out.println("Generated xml: ");
       System.out.println(new String(generatedXML));
-      xmlGeneratorWrapper.xmlProduced(generatedXML);
+      xmlGeneratorAdapter.xmlProduced(generatedXML);
     }
   }
 }

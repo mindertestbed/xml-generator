@@ -1,12 +1,11 @@
-package wrapper;
+package com.isirius.minder.samples.xmlGenerator;
 
 import java.util.ArrayList;
 import java.util.concurrent.LinkedBlockingQueue;
 
 import minderengine.*;
-import xmlservices.XMLGenerationService;
 
-public abstract class XmlGeneratorWrapper extends Adapter {
+public abstract class XmlGeneratorAdapter extends Adapter {
 
   private boolean isRunning = false;
   private ArrayList<XMLWorker> xmlWorkerList;
@@ -15,7 +14,7 @@ public abstract class XmlGeneratorWrapper extends Adapter {
 
   private SUTIdentifiers sutIdentifiers;
 
-  public XmlGeneratorWrapper() {
+  public XmlGeneratorAdapter() {
     sutIdentifiers = new SUTIdentifiers();
     SUTIdentifier identifier = new SUTIdentifier();
     identifier.setSutName("XML Generator");

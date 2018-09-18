@@ -6,7 +6,7 @@
 //
 
 
-package xmlmodel.books;
+package com.isirius.minder.samples.xmlGenerator.books;
 
 import java.io.Serializable;
 

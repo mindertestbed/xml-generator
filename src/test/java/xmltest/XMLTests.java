@@ -1,16 +1,14 @@
 package xmltest;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import serialization.SerializationUtils;
-import xmlmodel.books.BookForm;
-import xmlmodel.books.BooksForm;
-import xmlservices.XMLGenerationService;
+import com.isirius.minder.samples.xmlGenerator.serialization.SerializationUtils;
+import com.isirius.minder.samples.xmlGenerator.books.BookForm;
+import com.isirius.minder.samples.xmlGenerator.books.BooksForm;
+import com.isirius.minder.samples.xmlGenerator.xmlservices.XMLGenerationService;
 
 public class XMLTests {
 	private static BooksForm booksForm;

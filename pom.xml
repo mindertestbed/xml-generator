@@ -49,23 +49,24 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>wrapper.Initiator</mainClass>
+              <mainClass>com.isirius.minder.samples.xmlGenerator.Initiator</mainClass>
             </manifest>
           </archive>
         </configuration>
       </plugin>
     </plugins>
   </build>
+
   <dependencies>
     <dependency>
-      <groupId>gov.tubitak.minder</groupId>
+      <groupId>com.yerlibilgin.minder</groupId>
       <artifactId>minder-common</artifactId>
-      <version>1.0.0</version>
+      <version>1.1.0</version>
     </dependency>
     <dependency>
-      <groupId>gov.tubitak.minder</groupId>
+      <groupId>com.yerlibilgin.minder</groupId>
       <artifactId>minder-client</artifactId>
-      <version>1.0.0</version>
+      <version>1.1.0</version>
     </dependency>
 
     <dependency>

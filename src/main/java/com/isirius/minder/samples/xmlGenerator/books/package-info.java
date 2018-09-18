@@ -6,4 +6,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "urn:books")
-package xmlmodel.books;
+package com.isirius.minder.samples.xmlGenerator.books;
